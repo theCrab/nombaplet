@@ -1,73 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <section class="top-section">
-                <!-- Header Start -->
-                <header class="app-header">
-                    <h1 id="logo">Nomba Plet</h1>
-                </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nomba Plet &mdash; Best plates in town</title>
+    <link rel="stylesheet" href="assets/stylesheets/resets.css">
+    <link rel="stylesheet" href="assets/stylesheets/nombaplet.css">
+    <link rel="stylesheet" href="assets/stylesheets/elements.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Wrapper-->
+        <div class="top-wrapper">
+            <header class="app-header">
+                <h1 id="logo">Nomba Plet</h1>
+            </header>
 
-                <!-- Plate Wrapper -->
-                <div class="plate-wrapper">
-                    <div class="plate bordered">
-                        <img src="/assets/images/flags/england.png" alt="ENGLAND">
-                        <p id="regNumber"><span>MR13 UTT</span></p>
-                    </div>
+            <!-- Plate Wrapper -->
+            <div class="plate-wrapper">
+                <div class="plate bordered" > <!-- style="background: url(assets/images/unionjack.jpg) no-repeat left orange
+                    " -->
+                    <!-- <img src="assets/images/unionjack.jpg" alt="England"> -->
+                    <p id="reg-number">MR13 UTT</p>
                 </div>
-
-                <!-- Plate form -->
-                <div class="plate-settings">
-                    <select name="" id="">
-                        <option value="england">England</option>
-                        <option value="scotland">Scotland</option>
-                        <option value="wales">Wales</option>
-                        <option value="gb" selected>GB</option>
-                    </select>
-
-                    <label for="bordered">
-                        <input type="checkbox" name="bordered" id="bordered" checked>
-                        Bordered
-                    </label>
-
-                    <div>
-                        <input type="text" name="reg-number" placeholder="Enter your reg">
-                        <button type="submit">Place Order</button>
-                    </div>
-                </div>
-            </section>
-
-            <div class="plate-form">
-                <form class="order-info">
-                    <div class="customer-details">
-                        <h3>Customer Details</h3>
-                        <input type="text" name="firstName" placeholder="First Name">
-                        <input type="text" name="lastName" placeholder="Last Name">
-                        <input type="tel" name="phone" id="phone" placeholder="Phone">
-                    </div>
-
-                    <div class="customer-details">
-                        <h3>Shipping Details</h3>
-                        <input type="text" name="street" placeholder="Street" >
-                        <input type="text" name="locality" placeholder="Locality">
-                        <input type="text" name="city" placeholder="City">
-                        <input type="text" name="postCode" placeholder="Post Code">
-                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="More instructions"></textarea>
-                    </div>
-
-                    <div><button type="submit">Process Payment</button></div>
-                </form>
             </div>
+            <div class="plate-settings">
+                <select name="" id="">
+                    <option value="england">England</option>
+                    <option value="scotland">Scotland</option>
+                    <option value="wales">Wales</option>
+                    <option value="unionjack">GB</option>
+                    <option value="blank" selected>No flag</option>
+                </select>
 
-            <footer class="app-footer">&COPY; NombaPlet</footer>
+                <label for="bordered" class="bordered checkbox">
+                    <input class="input" type="checkbox" checked id="bordered">
+                    Add border
+                </label>
+
+                <div>
+                    <input class="input" type="text" id="reg-number-input" placeholder="Enter your reg number">
+                    <button class="button">Place Order</button>
+                </div>
+
+            </div>
         </div>
-    </body>
+
+        <form class="order-details">
+            <div>
+                <div class="customer-details">
+                    <h3>Customer Details</h3>
+                    <input class="input" type="text" placeholder="First Name">
+                    <input class="input" type="text" placeholder="Last Name">
+                    <input class="input" type="text" placeholder="Phone">
+                </div>
+
+                <div class="shipping-details">
+                    <h3>Shipping Details</h3>
+                    <input class="input" type="text" placeholder="Street">
+                    <input class="input" type="text" placeholder="Locality">
+                    <input class="input" type="text" placeholder="City">
+                    <input class="input" type="text" placeholder="Post Code">
+                    <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Extra instructions"></textarea>
+                </div>
+            </div>
+            <p><button class="button" type="submit">Process Payment</button></p>
+        </form>
+
+        <footer>&copy; TheCrab</footer>
+    </div>
+
+    <!-- Javasripts -->
+    <!-- <script src="assets/javascripts/nombaplet.js"></script> -->
+</body>
 </html>
