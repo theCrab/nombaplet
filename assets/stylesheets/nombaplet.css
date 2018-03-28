@@ -152,7 +152,7 @@ footer {
     width: 100vw !important;
     height: -moz-max-content;
     min-height: -moz-fit-content;
-    min-height: 50vh
+    min-height: 60vh
   }
   
   .plate #reg-number {
