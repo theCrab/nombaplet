@@ -24,7 +24,7 @@ textarea {
 }
  
 .wrapper .top-wrapper {
-  height: 50vh;
+  min-height: 50vh;
 /*   background-color: red */
 }
 
@@ -120,6 +120,9 @@ form.order-details > p, .customer-details, .shipping-details {
   flex-flow: column;
 }
 
+form.customer-details, form.shipping-details {
+  flex: 1;
+}
 
 form.order-details > div {
   display: flex;
@@ -152,7 +155,6 @@ footer {
     width: 100vw !important;
     height: -moz-max-content;
     min-height: -moz-fit-content;
-    min-height: 60vh
   }
   
   .plate #reg-number {
