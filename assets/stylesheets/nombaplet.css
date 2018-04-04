@@ -110,7 +110,7 @@ textarea {
 form.order-details {
   display: grid;
   justify-content: space-around;
-  background-color: #f1f1f1;
+  background-color: #e2e2e2;
   margin: 20px 0;
 }
 
@@ -118,9 +118,6 @@ form.order-details > p, .customer-details, .shipping-details {
   padding: 10px;
   display: flex;
   flex-flow: column;
-}
-
-form.customer-details, form.shipping-details {
   flex: 1;
 }
 

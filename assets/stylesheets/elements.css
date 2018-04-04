@@ -202,3 +202,10 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
+
+form.order-details input:not([type='checkbox']), form.order-details textarea {
+  padding-left: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
